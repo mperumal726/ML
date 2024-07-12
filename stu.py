@@ -26,12 +26,12 @@ if st.button('Predict'):
     prd=model.predict([[int(ho)]])
     p=prd
     r=p.round()
-    st.success(f'Hi {name},You will get {r} Marks in the {std} Subject...🎯')
+    st.sidebar.success(f'Hello {name},You can Score {r} Marks in {std} Subject...🎯')
     st.balloons()
 
 
-    
-st.link_button('Linkedin','https://www.linkedin.com/in/muruga-perumal-iyadurai-7693592a7/')
+   
+    st.sidebar.link_button('About-Me','https://www.linkedin.com/in/muruga-perumal-iyadurai-7693592a7/')
                 
 
 
